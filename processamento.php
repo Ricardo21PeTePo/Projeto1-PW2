@@ -19,7 +19,7 @@ $classific = $_POST["classificacao"];
 $categ = $_POST['categ'];
 $resenha = $_POST['comment'];
 
-$jogos[$counter] = array(array(
+$jogos[$counter] = array(
     'nome' => $nome,
     'producer' => $producer,
     'preco' => $preco,
@@ -27,13 +27,13 @@ $jogos[$counter] = array(array(
     'classificacao' => $classific,
     'categoria' => $categ,
     'resenha' => $resenha
-));
+);
 
 
 $dados_json = json_encode($jogos);
 
 file_put_contents($file, array($dados_json));
 
-// header("Location: principal.php");
-// exit;
+header("Location: principal.php");
+exit;
 ?>
