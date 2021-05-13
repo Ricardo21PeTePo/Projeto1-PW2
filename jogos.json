@@ -1,11 +1,1 @@
-[
-    [
-        {"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"fps","resenha":"a"}
-    ],
-    [
-        {"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"fps","resenha":"a"}
-    ],
-    [
-        {"nome":"r","producer":"h","preco":"15","gamertag":"l","classificacao":"16","categoria":"fps","resenha":"asd"}
-    ]
-]
+[[{"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"fps","resenha":"a"}],[{"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"fps","resenha":"a"}],[{"nome":"r","producer":"h","preco":"15","gamertag":"l","classificacao":"16","categoria":"fps","resenha":"asd"}],[{"nome":"Valorant","producer":"Riot","preco":"1","gamertag":"MorriNemVi","classificacao":"14","categoria":"fps","resenha":"Jogo para passar raiva"}],[{"nome":"Valorant","producer":"Riot","preco":"0","gamertag":"MorriNemVi","classificacao":"14","categoria":"fps","resenha":"Jogo feito para se passar raiva"}]]

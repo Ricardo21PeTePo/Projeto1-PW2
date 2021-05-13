@@ -34,6 +34,6 @@ $dados_json = json_encode($jogos);
 
 file_put_contents($file, array($dados_json));
 
-// header("Location: principal.php");
-// exit;
+header("Location: principal.php");
+exit;
 ?>

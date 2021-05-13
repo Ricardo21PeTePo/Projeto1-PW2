@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "c:\\Users\\annap\\OneDrive\\Área de Trabalho\\FACUL\\3º SEMESTRE\\PW2\\Projeto1-PW2",
+      "environment": [],
+      "program": "c:\\Users\\annap\\OneDrive\\Área de Trabalho\\FACUL\\3º SEMESTRE\\PW2\\Projeto1-PW2\\build\\Debug\\outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+      "externalConsole": true
+    }
+  ]
+}

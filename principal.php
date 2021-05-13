@@ -43,7 +43,7 @@
                     <div class="field">
                         <label class="label" for="preco">Preço de lançamento</label>
                         <div class="control">
-                            <input class="input" id="preco" type="number" min="1" max="400" name="preco" placeholder="250,00" required>
+                            <input class="input" id="preco" type="number" min="0" max="400" name="preco" placeholder="250,00" required>
                         </div>
                     </div>
                     <div class="field">
