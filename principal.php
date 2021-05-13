@@ -3,10 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/7928671f8b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <style>
@@ -82,11 +80,11 @@
                         <label for="categ" class="label">Categoria:</label>
                         <div class="select">
                             <select name="categ" id="i6">
-                                <option value="rpg">RPG</option>
-                                <option value="fps" selected>FPS</option>
-                                <option value="moba">MOBA</option>
-                                <option value="simulador">Simulador</option>
-                                <option value="plataforma">Plataforma</option>
+                                <option value="RPG">RPG</option>
+                                <option value="FPS" selected>FPS</option>
+                                <option value="MOBA">MOBA</option>
+                                <option value="Simulador">Simulador</option>
+                                <option value="Plataforma">Plataforma</option>
                             </select>
                         </div>
                     </div>
@@ -99,7 +97,7 @@
                     <div class="field is-grouped">
                         <div class="control">
                             <button class="button is-danger" type="reset">Reset</button>
-                            <button class="button is-primary" type="submit">Enviar</button>
+                            <button class="button is-primary" name="operacao" value="cadastrar" type="submit">Enviar</button>
                         </div>
                     </div>
                     
@@ -126,7 +124,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($dataArray as $jogo) {?>
+            <?php foreach ($dataArray as $indice => $jogo) {?>
                 <tr>
                     <td><?php echo $jogo['nome']; ?></td>
                     <td><?php echo $jogo['producer']; ?></td>
@@ -136,12 +134,12 @@
                     <td><?php echo $jogo['categoria']; ?></td>
                     <td><?php echo $jogo['resenha']; ?></td>
                     <td>
-                        <button type='button' class='button is-small is-warning editE'>
+                        <a href="alteração.php?Indice=<?php echo $indice; ?>" class='button is-small is-warning'>
                             <i class='fas fa-edit'></i>
-                        </button>
-                        <button class='button is-small is-danger deleteE'>
+                        </a>
+                        <a href="exclusão.php?Indice=<?php echo $indice; ?>" class='button is-small is-danger'>
                             <i class='fas fa-trash-alt'></i>
-                        </button>
+                        </a>
                     </td>
             <?php } ?>
         </tbody>
