@@ -1,4 +1,3 @@
-<!--dados serao enviados daqui para a pagina de processamento-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,11 +14,16 @@
         .hero {
             text-align: center;
             margin-bottom: 10px;
+            padding-top: 25px;
+        }
+        table {
+            text-align: center;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
-    <section class="hero">
+    <section class="hero is-info">
         <h1 class="title">Cadastre um novo jogo!</h1>
         <hr>
     </section>
@@ -104,6 +108,43 @@
             <div class="column"></div>
         </div>
     </section>
-    
+    <?php
+        $data = file_get_contents("jogos.json");
+        $dataArray = json_decode($data, true);
+    ?>
+    <table class="table is-fullwidth is-bordered is-striped is-hoverable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Produtora</th>
+                <th>Preço</th>
+                <th>Gamertag</th>
+                <th>Classificação</th>
+                <th>Categoria</th>
+                <th>Resenha</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($dataArray as $jogo) {?>
+                <tr>
+                    <td><?php echo $jogo['nome']; ?></td>
+                    <td><?php echo $jogo['producer']; ?></td>
+                    <td><?php echo $jogo['preco']; ?></td>
+                    <td><?php echo $jogo['gamertag']; ?></td>
+                    <td><?php echo $jogo['classificacao']; ?></td>
+                    <td><?php echo $jogo['categoria']; ?></td>
+                    <td><?php echo $jogo['resenha']; ?></td>
+                    <td>
+                        <button type='button' class='button is-small is-warning editE'>
+                            <i class='fas fa-edit'></i>
+                        </button>
+                        <button class='button is-small is-danger deleteE'>
+                            <i class='fas fa-trash-alt'></i>
+                        </button>
+                    </td>
+            <?php } ?>
+        </tbody>
+    </table>
 </body>
 </html>
