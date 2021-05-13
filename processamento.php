@@ -11,30 +11,28 @@ foreach (json_decode($jogosJSON, true) as $jogo) {
     $counter++;
 }
 
-var_dump($jogos);
+$nome = $_POST['nome'];
+$producer = $_POST['produtora'];
+$preco = $_POST['preco'];
+$gamertag = $_POST['gamertag'];
+$classific = $_POST["classificacao"];
+$categ = $_POST['categ'];
+$resenha = $_POST['comment'];
 
-// $nome = $_POST['nome'];
-// $producer = $_POST['produtora'];
-// $preco = $_POST['preco'];
-// $gamertag = $_POST['gamertag'];
-// $classific = $_POST["classificacao"];
-// $categ = $_POST['categ'];
-// $resenha = $_POST['comment'];
-
-// $dados = Array(
-//     '0' => Array('nome' => $nome,
-//     'producer' => $producer,
-//     'preco' => $preco,
-//     'gamertag' => $gamertag,
-//     'classificacao' => $classific,
-//     'categoria' => $categ,
-//     'resenha' => $resenha)
-// );
-// $dados_json = json_encode(array("jogo" => $dados));
+$jogos[$counter] = array(array(
+    'nome' => $nome,
+    'producer' => $producer,
+    'preco' => $preco,
+    'gamertag' => $gamertag,
+    'classificacao' => $classific,
+    'categoria' => $categ,
+    'resenha' => $resenha
+));
 
 
+$dados_json = json_encode($jogos);
 
-// file_put_contents($file, $dados_json);
+file_put_contents($file, array($dados_json));
 
 // header("Location: principal.php");
 // exit;

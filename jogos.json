@@ -1,4 +1,11 @@
-{
-    "0":[{"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"fps","resenha":"a"}],
-    "1":[{"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"fps","resenha":"a"}]
-}
+[
+    [
+        {"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"fps","resenha":"a"}
+    ],
+    [
+        {"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"fps","resenha":"a"}
+    ],
+    [
+        {"nome":"r","producer":"h","preco":"15","gamertag":"l","classificacao":"16","categoria":"fps","resenha":"asd"}
+    ]
+]
