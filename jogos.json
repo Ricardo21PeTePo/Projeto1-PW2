@@ -1,10 +1,1 @@
-[
-    {"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"FPS","resenha":"a"},
-    {"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"FPS","resenha":"a"},
-    {"nome":"r","producer":"h","preco":"15","gamertag":"l","classificacao":"16","categoria":"FPS","resenha":"asd"},
-    {"nome":"cod","producer":"tryearch","preco":"10","gamertag":"escsound","classificacao":"18","categoria":"FPS","resenha":"huahua"},
-    {"nome":"r","producer":"t","preco":"4","gamertag":"p","classificacao":"14","categoria":"FPS","resenha":"ppppp"},
-    {"nome":"y","producer":"y","preco":"51","gamertag":"y","classificacao":"18","categoria":"FPS","resenha":"y"},
-    {"nome":"tete","producer":"tete","preco":"102","gamertag":"tete","classificacao":"L","categoria":"FPS","resenha":"tete"},
-    {"nome":"cod","producer":"tryearch","preco":"10","gamertag":"escsound","classificacao":"18","categoria":"FPS","resenha":"huahua"}
-]
+{"0":{"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"FPS","resenha":"a"},"1":{"nome":"a","producer":"b","preco":"12","gamertag":"c","classificacao":"18","categoria":"FPS","resenha":"a"},"2":{"nome":"r","producer":"h","preco":"15","gamertag":"l","classificacao":"16","categoria":"FPS","resenha":"asd"},"3":{"nome":"cod","producer":"tryearch","preco":"10","gamertag":"escsound","classificacao":"18","categoria":"FPS","resenha":"huahua"},"4":{"nome":"r","producer":"t","preco":"4","gamertag":"p","classificacao":"14","categoria":"FPS","resenha":"ppppp"},"5":{"nome":"y","producer":"y","preco":"51","gamertag":"y","classificacao":"18","categoria":"FPS","resenha":"y"},"7":{"nome":"cod","producer":"tryearch","preco":"10","gamertag":"escsound","classificacao":"18","categoria":"FPS","resenha":"huahua"}}

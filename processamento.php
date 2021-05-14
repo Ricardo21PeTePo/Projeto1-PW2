@@ -43,17 +43,20 @@ if ($operacao == "cadastrar") {
     header("Location: principal.php");
     exit;
 } elseif ($operacao == "alterar"){
-
+    echo "alterando";
 
 } elseif ($operacao == "deletar") {
-    $nome = $_GET['nome'];
+    $nome = $_POST['nome'];
     $data = file_get_contents("jogos.json");
     $dataArray = json_decode($data, true);
     foreach($dataArray as $indice => $jogo){
         if (in_array($nome,$jogo)){
-            var_dump($jogo);
+            unset($dataArray[$indice]);
         }
     }
+    
+    $dataJSON = json_encode($dataArray);
+    file_put_contents("jogos.json", $dataJSON);
 
 } else {
     header("Location: principal.php");
