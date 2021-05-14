@@ -1,4 +1,3 @@
-<!--função de alteração sera feita aqui-->
 <?php 
 $ind = $_GET['Indice'];
 $data = file_get_contents("jogos.json");
