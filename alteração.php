@@ -151,7 +151,7 @@ $dataArray = json_decode($data, true);
                             <button class="button is-primary" name="operacao" value="alterar" type="submit">Editar</button>
                         </div>
                     </div>
-                    
+                    <input type="number" name="indice" value="<?php echo $indice;  ?>" style="display: none">
                 </form>
                 <?php 
                     }
