@@ -1,4 +1,3 @@
-<!-- dados serao processados aqui e salvos no arquivo json-->
 <?php
 if (isset($_POST['operacao'])) {
     $operacao = $_POST['operacao'];
